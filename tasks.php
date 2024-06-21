@@ -25,7 +25,7 @@ if(isset($_POST['save_task'])){
         $id = $_GET['delid'];
 
         $query = "DELETE FROM task WHERE id = $id";
-        $result = mysqli_query($conn, $query);
+
         if(!$result){
             die("Query failed");
         }
